@@ -29,11 +29,12 @@ One row per finding. **Source** = file in this folder, URL, or "observed".
 
 ## USB (one block per mode)
 
-### Mode: ____________
+### Mode: Mass storage
 
 | Field | Value |
 |-------|-------|
 | On-screen mode name | |
+| Finder volume name | `UDISK` (observed 2026-10-25) — generic label, weak hint only |
 | Vendor ID (hex) | |
 | Product ID (hex) | |
 | Manufacturer string | |
