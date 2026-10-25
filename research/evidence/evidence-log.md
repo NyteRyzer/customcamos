@@ -71,7 +71,7 @@ One row per finding. **Source** = file in this folder, URL, or "observed".
 | Mac IP / subnet | `192.168.10.100` (DHCP lease from camera) → camera subnet 192.168.10.x | `ipconfig getifaddr en0`, 2026-10-25 | confirmed |
 | Camera MAC OUI (first 3 bytes only) | `94:7E:4C` (globally-administered bit pattern) | `arp -a` | confirmed |
 | OUI vendor (Wi-Fi chip) | **Not in IEEE registry** as bundled with netaddr 1.3.0; no web hits. Either registered recently or an unregistered/made-up MAC (common on budget modules). Inconclusive | netaddr lookup + web search | unknown |
-| Companion app (name / developer) | Unknown — on-screen QR ("bc" logo) decodes to `https://qr24.cn/FypBbk` (Chinese QR/short-link host; not reachable from research environment). Owner to scan with phone and note app name | Wi-Fi Information screen | pending |
+| Companion app (name / developer) | **iDC CAM** by **Shenzhen Sunchip Technology Co., Ltd.** (App Store, Utilities, 1.5★ / 149 ratings). QR `qr24.cn/FypBbk` → cli.im download page with Google Play, App Store and two China Android links | Owner phone screenshots, 2026-10-25 | confirmed |
 | Web page at camera IP? | | | |
 
 ## Hardware
@@ -92,6 +92,7 @@ One row per finding. **Source** = file in this folder, URL, or "observed".
 | 2026-10-25 | SoC vendor is **Allwinner** | (1) USB VID `0x1f3a` is Allwinner's; (2) `UDISK` is the user-data volume name used in Allwinner's SDKs; (3) serial `20080411` is a known Allwinner BSP gadget default |
 | 2026-10-25 | Camera runs a **Linux** kernel, version **4.9** | `File-Stor Gadget` is the Linux kernel USB mass-storage gadget's product name; Linux sets the gadget's bcdDevice to the kernel version → `0x0409` = 4.9; Manufacturer `Android` is the Allwinner Linux gadget driver's default string |
 | 2026-10-25 | Model `CDR10` gives no public matches yet; "CDR" is a common abbreviation for *car digital recorder*, consistent with Allwinner's car-DVR/IP-camera V-series software lineage | Device info screen + web search (no CDR10 hits) — **hint only** |
+| 2026-10-25 | App developer **Shenzhen Sunchip** is an Allwinner/Rockchip/Espressif solutions provider that has shipped Allwinner V-series cameras (e.g. V3 4K 360° camera, CES 2016) | App Store listing + public sources (androidtvbox.eu, freshdi.com) — **corroborates Allwinner**; exact chip still unknown. Linux 4.9 points to a newer V-series part than V3, but that is a hint only |
 | 2026-10-25 | Not the camera: Sunplus `0x1bcf:0x08a0` and SEMICO keyboard | Low-speed (1.5 Mb/s) devices behind the same hub — mouse/keyboard, not the camera |
 
 ## Risk acceptance (future modification only)
