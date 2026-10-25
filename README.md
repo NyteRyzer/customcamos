@@ -6,7 +6,9 @@ what a realistic "CreatorOS" experience could look like instead.
 
 **Current phase: Phase 1 — Hardware identification (read-only).**
 
-Start here: [`research/README.md`](research/README.md)
+**New to this? Start with [`START-HERE.md`](START-HERE.md).**
+
+Research details: [`research/README.md`](research/README.md)
 
 ## Ground rules
 
