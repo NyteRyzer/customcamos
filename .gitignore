@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# Never commit vendor firmware binaries or device images
+research/evidence/firmware-downloads/
+*.bin
+*.img
+*.dmg
+*.iso
+*.BRN
+*.brn
+
+# Large raw media (keep small reference photos/screenshots only)
+*.MP4
+*.mp4
+*.MOV
+*.mov
