@@ -65,12 +65,13 @@ One row per finding. **Source** = file in this folder, URL, or "observed".
 
 | Item | Value | Source | Confidence |
 |------|-------|--------|------------|
-| SSID pattern | | | |
+| SSID pattern | `4K_WIFI` (fixed name, no unique suffix) | Wi-Fi Information screen, 2026-10-25 | confirmed |
+| Wi-Fi password | Factory default, shown on screen (generic 8-digit; not recorded here) | same | confirmed |
 | Camera IP | | | |
 | Mac IP / subnet | | | |
 | Camera MAC OUI (first 3 bytes only) | | | |
 | OUI vendor (Wi-Fi chip) | | | |
-| Companion app (name / developer) | | | |
+| Companion app (name / developer) | Unknown — on-screen QR ("bc" logo) decodes to `https://qr24.cn/FypBbk` (Chinese QR/short-link host; not reachable from research environment). Owner to scan with phone and note app name | Wi-Fi Information screen | pending |
 | Web page at camera IP? | | | |
 
 ## Hardware
