@@ -13,10 +13,11 @@ One row per finding. **Source** = file in this folder, URL, or "observed".
 | Brand | | | unknown |
 | Model | | | unknown |
 | OEM / manufacturer | | | unknown |
-| FCC ID / other regulatory ID | | | unknown |
+| FCC ID / other regulatory ID | **None printed** on bottom label — FCC logo only (no ID number), plus CE, UKCA, WEEE marks | bottom label photo, 2026-10-25 (kept locally, not committed: shows serial) | confirmed for bottom label; battery bay / box / on-screen e-label not yet checked |
 | Seller (TikTok Shop) | | | unknown |
 | Same hardware sold as | | | unknown |
 | Purchase date | | | unknown |
+| Bottom label text | `DC IN-5V`, `MADE IN CHINA`, `SN:2025…` (redacted; prefix may be a 2025 build date) | bottom label photo | confirmed |
 
 ## Firmware
 
