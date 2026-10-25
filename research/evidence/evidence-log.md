@@ -58,6 +58,7 @@ One row per finding. **Source** = file in this folder, URL, or "observed".
 | Photo naming pattern | not yet seen (no photos on card) | same |
 | Video naming pattern / container | `DCIM/100MEDIA/ANMRnnnn.mp4` | same |
 | EXIF Make / Model | | |
+| Video metadata strings | Only `VideoHandler` (track handler name used by FFmpeg-derived MP4 writers, incl. Allwinner CedarX); no chip/SDK names. Other matches were random bytes | `strings` on ANMR0003.mp4, 2026-10-25 |
 | Non-media files created by camera | `DCIM/.thumb/ANMRnnnn.thm` + `ANMRnnnn.sec` (per-video, 3–25 MB `.sec`, purpose unknown) | same |
 
 ## Wi-Fi
