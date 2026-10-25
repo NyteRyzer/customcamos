@@ -4,7 +4,7 @@ Research project exploring whether a budget Wi-Fi digital camera (bought on
 TikTok Shop, brand and model unknown) can run custom firmware, and if not,
 what a realistic "CreatorOS" experience could look like instead.
 
-**Current phase: Phase 1 — Hardware identification (read-only).**
+**Current phase: Phase 2 — Open-source firmware research (family level).** Camera identified as an Allwinner-based Linux 4.9 device (model CDR10, firmware V7.0); exact chip model still unknown.
 
 **New to this? Start with [`START-HERE.md`](START-HERE.md).**
 
