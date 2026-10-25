@@ -42,7 +42,7 @@ One row per finding. **Source** = file in this folder, URL, or "observed".
 | Manufacturer string | `Android` |
 | Product string | `IOUSBHostDevice` (macOS placeholder; device sent none) |
 | Serial string | `20080411` |
-| Interface class(es) | Mass Storage (inferred from Media entry; class number not captured) |
+| Interface class(es) | One interface only: class 8 / subclass 6 / protocol 80 = Mass Storage, SCSI, Bulk-Only. 1 configuration. **No ADB interface** (255/66/1) in this mode |
 | Speed | Up to 480 Mb/s (USB 2.0 High-Speed) |
 | bcdDevice / Version | `0x0409` / 4.09 |
 | diskutil media name (storage) | `File-Stor Gadget`, FAT32, 31.3 GB, exposed **read-only** to the Mac |
