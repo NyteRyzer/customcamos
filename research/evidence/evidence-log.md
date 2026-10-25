@@ -35,28 +35,28 @@ One row per finding. **Source** = file in this folder, URL, or "observed".
 |-------|-------|
 | On-screen mode name | |
 | Finder volume name | `UDISK` (observed 2026-10-25) — generic label, weak hint only |
-| Vendor ID (hex) | |
-| Product ID (hex) | |
-| Manufacturer string | |
-| Product string | |
-| Serial string | |
-| Interface class(es) | |
-| Speed | |
-| bcdDevice / Version | |
-| diskutil media name (storage) | |
-| Snapshot folder | `usb/…` |
-| VID lookup result | |
+| Vendor ID (hex) | `0x1f3a` (decimal 7994) |
+| Product ID (hex) | `0x100f` (decimal 4111) |
+| Manufacturer string | `Android` |
+| Product string | `IOUSBHostDevice` (macOS placeholder; device sent none) |
+| Serial string | `20080411` |
+| Interface class(es) | Mass Storage (inferred from Media entry; class number not captured) |
+| Speed | Up to 480 Mb/s (USB 2.0 High-Speed) |
+| bcdDevice / Version | `0x0409` / 4.09 |
+| diskutil media name (storage) | `File-Stor Gadget`, FAT32, 31.3 GB, exposed **read-only** to the Mac |
+| Snapshot folder | `usb/20261025-0755-mode-mass-storage/` |
+| VID lookup result | `0x1f3a` = Allwinner Technology |
 
 ## SD card
 
 | Item | Value | Source |
 |------|-------|--------|
-| File system / size | | |
-| Top-level folders | | |
-| Photo naming pattern | | |
-| Video naming pattern / container | | |
+| File system / size | FAT32, 31.3 GB (1.1 GB used) | usb/20261025-0755-mode-mass-storage |
+| Top-level folders | `.data/` (empty), `DCIM/` | same |
+| Photo naming pattern | not yet seen (no photos on card) | same |
+| Video naming pattern / container | `DCIM/100MEDIA/ANMRnnnn.mp4` | same |
 | EXIF Make / Model | | |
-| Non-media files created by camera | | |
+| Non-media files created by camera | `DCIM/.thumb/ANMRnnnn.thm` + `ANMRnnnn.sec` (per-video, 3–25 MB `.sec`, purpose unknown) | same |
 
 ## Wi-Fi
 
@@ -74,7 +74,7 @@ One row per finding. **Source** = file in this folder, URL, or "observed".
 
 | Component | Marking | Source (FCC photo / internal photo) | Confidence |
 |-----------|---------|-------------------------------------|------------|
-| SoC | | | unknown |
+| SoC | Allwinner (exact model unknown); runs Linux kernel 4.9 | USB evidence, see Conclusions | vendor **confirmed**, model unknown |
 | Flash memory | | | unknown |
 | RAM (if separate) | | | unknown |
 | Image sensor | | | unknown |
@@ -85,7 +85,9 @@ One row per finding. **Source** = file in this folder, URL, or "observed".
 
 | Date | Conclusion | Based on |
 |------|------------|----------|
-| | | |
+| 2026-10-25 | SoC vendor is **Allwinner** | (1) USB VID `0x1f3a` is Allwinner's; (2) `UDISK` is the user-data volume name used in Allwinner's SDKs; (3) serial `20080411` is a known Allwinner BSP gadget default |
+| 2026-10-25 | Camera runs a **Linux** kernel, version **4.9** | `File-Stor Gadget` is the Linux kernel USB mass-storage gadget's product name; Linux sets the gadget's bcdDevice to the kernel version → `0x0409` = 4.9; Manufacturer `Android` is the Allwinner Linux gadget driver's default string |
+| 2026-10-25 | Not the camera: Sunplus `0x1bcf:0x08a0` and SEMICO keyboard | Low-speed (1.5 Mb/s) devices behind the same hub — mouse/keyboard, not the camera |
 
 ## Risk acceptance (future modification only)
 

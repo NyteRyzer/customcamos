@@ -1,7 +1,7 @@
 # Hardware Investigation Report — CreatorOS Phase 1
 
 - **Date opened:** 2026-10-25
-- **Status:** Evidence collection not yet started
+- **Status:** In progress — SoC vendor identified as Allwinner (Linux 4.9); exact chip model still unknown (see `evidence/evidence-log.md`)
 - **Scope:** Identify the camera's hardware and software platform using only
   read-only, non-destructive methods. No flashing, erasing, or modification.
 

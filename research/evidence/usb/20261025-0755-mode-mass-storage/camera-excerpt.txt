@@ -1,0 +1,129 @@
+# Camera-only excerpt of camera-report.txt (2026-10-25 07:55 CDT, macOS 15.7.8)
+# Other devices and Mac serial numbers removed for privacy.
+
+## system_profiler
+            Composite Device:
+
+              Product ID: 0x100f
+              Vendor ID: 0x1f3a
+              Version: 4.09
+              Serial Number: 20080411
+              Speed: Up to 480 Mb/s
+              Manufacturer: Android
+              Location ID: 0x14420000 / 33
+              Current Available (mA): 500
+              Current Required (mA): 500
+              Extra Operating Current (mA): 0
+              Media:
+                File-Stor Gadget:
+                  Capacity: 31.27 GB (31,268,536,320 bytes)
+                  Removable Media: Yes
+                  BSD Name: disk7
+                  Logical Unit: 0
+                  Partition Map Type: Unknown
+                  S.M.A.R.T. status: Verified
+                  USB Interface: 0
+
+## ioreg
+            "idProduct" = 4111
+            "bcdDevice" = 1033
+            "USB Product Name" = "IOUSBHostDevice"
+            "USB Vendor Name" = "Android"
+            "idVendor" = 7994
+            "USB Serial Number" = "20080411"
+
+## diskutil info disk7
+   Device Identifier:         disk7
+   Device Node:               /dev/disk7
+   Whole:                     Yes
+   Part of Whole:             disk7
+   Device / Media Name:       File-Stor Gadget
+
+   Volume Name:               UDISK
+   Mounted:                   Yes
+   Mount Point:               /Volumes/UDISK
+
+   Content (IOContent):       None
+   File System Personality:   MS-DOS FAT32
+   Type (Bundle):             msdos
+   Name (User Visible):       MS-DOS (FAT32)
+
+   OS Can Be Installed:       No
+   Media Type:                Generic
+   Protocol:                  USB
+   SMART Status:              Not Supported
+
+   Disk Size:                 31.3 GB (31268536320 Bytes) (exactly 61071360 512-Byte-Units)
+   Device Block Size:         512 Bytes
+
+   Volume Total Space:        31.3 GB (31264735232 Bytes) (exactly 61063936 512-Byte-Units)
+   Volume Used Space:         1.1 GB (1146355712 Bytes) (exactly 2238976 512-Byte-Units) (3.7%)
+   Volume Free Space:         30.1 GB (30118379520 Bytes) (exactly 58824960 512-Byte-Units) (96.3%)
+   Allocation Block Size:     512 Bytes
+
+   Media OS Use Only:         No
+   Media Read-Only:           Yes
+   Volume Read-Only:          Yes (read-only mount flag set)
+
+   Device Location:           External
+   Removable Media:           Removable
+   Media Removal:             Software-Activated
+
+   Solid State:               Info not available
+   Virtual:                   No
+
+## Files on UDISK
+total 384
+drwx------@ 1 user  staff      0 Nov 22  2026 .
+drwxr-xr-x  7 root             wheel    224 Oct 25 07:49 ..
+drwx------  1 user  staff  65536 Nov 22  2026 .data
+drwx------  1 user  staff  65536 Nov 22  2026 DCIM
+
+/Volumes/UDISK/.data:
+total 256
+drwx------  1 user  staff  65536 Nov 22  2026 .
+drwx------@ 1 user  staff      0 Nov 22  2026 ..
+
+/Volumes/UDISK/DCIM:
+total 512
+drwx------  1 user  staff  65536 Nov 22  2026 .
+drwx------@ 1 user  staff      0 Nov 22  2026 ..
+drwx------  1 user  staff  65536 Nov 22  2026 .thumb
+drwx------  1 user  staff  65536 Nov 22  2026 100MEDIA
+
+/Volumes/UDISK/DCIM/.thumb:
+total 163200
+drwx------  1 user  staff     65536 Nov 22  2026 .
+drwx------  1 user  staff     65536 Nov 22  2026 ..
+-rwx------  1 user  staff   6039382 Nov 22  2026 ANMR0000.sec
+-rwx------  1 user  staff     52114 Nov 22  2026 ANMR0000.thm
+-rwx------  1 user  staff   5859582 Nov 22  2026 ANMR0001.sec
+-rwx------  1 user  staff     44177 Nov 22  2026 ANMR0001.thm
+-rwx------  1 user  staff  13354548 Nov 22  2026 ANMR0002.sec
+-rwx------  1 user  staff     47347 Nov 22  2026 ANMR0002.thm
+-rwx------  1 user  staff   3261531 Nov 22  2026 ANMR0003.sec
+-rwx------  1 user  staff     67835 Nov 22  2026 ANMR0003.thm
+-rwx------  1 user  staff   3908590 Nov 22  2026 ANMR0004.sec
+-rwx------  1 user  staff     60821 Nov 22  2026 ANMR0004.thm
+-rwx------  1 user  staff   5072569 Nov 22  2026 ANMR0005.sec
+-rwx------  1 user  staff     52645 Nov 22  2026 ANMR0005.thm
+-rwx------  1 user  staff   4131633 Nov 22  2026 ANMR0006.sec
+-rwx------  1 user  staff     57266 Nov 22  2026 ANMR0006.thm
+-rwx------  1 user  staff  25276135 Nov 22  2026 ANMR0007.sec
+-rwx------  1 user  staff     39067 Nov 22  2026 ANMR0007.thm
+-rwx------  1 user  staff  15581981 Nov 22  2026 ANMR0008.sec
+-rwx------  1 user  staff     49013 Nov 22  2026 ANMR0008.thm
+
+/Volumes/UDISK/DCIM/100MEDIA:
+total 2075520
+drwx------  1 user  staff      65536 Nov 22  2026 .
+drwx------  1 user  staff      65536 Nov 22  2026 ..
+-rwx------  1 user  staff   68665013 Nov 22  2026 ANMR0000.mp4
+-rwx------  1 user  staff   65305100 Nov 22  2026 ANMR0001.mp4
+-rwx------  1 user  staff  180430242 Nov 22  2026 ANMR0002.mp4
+-rwx------  1 user  staff   34412886 Nov 22  2026 ANMR0003.mp4
+-rwx------  1 user  staff   42361208 Nov 22  2026 ANMR0004.mp4
+-rwx------  1 user  staff   59846594 Nov 22  2026 ANMR0005.mp4
+-rwx------  1 user  staff   46699250 Nov 22  2026 ANMR0006.mp4
+-rwx------  1 user  staff  353115878 Nov 22  2026 ANMR0007.mp4
+-rwx------  1 user  staff  211336311 Nov 22  2026 ANMR0008.mp4
