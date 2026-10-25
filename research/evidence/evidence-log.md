@@ -11,7 +11,7 @@ One row per finding. **Source** = file in this folder, URL, or "observed".
 | Item | Value | Source | Confidence |
 |------|-------|--------|------------|
 | Brand | | | unknown |
-| Model | | | unknown |
+| Model | `CDR10` (Settings → Device info) | menu photo, 2026-10-25 | confirmed (as reported by firmware) |
 | OEM / manufacturer | | | unknown |
 | FCC ID / other regulatory ID | **None printed** on bottom label — FCC logo only (no ID number), plus CE, UKCA, WEEE marks | bottom label photo, 2026-10-25 (kept locally, not committed: shows serial) | confirmed for bottom label; battery bay / box / on-screen e-label not yet checked |
 | Seller (TikTok Shop) | | | unknown |
@@ -23,8 +23,9 @@ One row per finding. **Source** = file in this folder, URL, or "observed".
 
 | Item | Value | Source | Confidence |
 |------|-------|--------|------------|
-| Firmware version (menu) | | | unknown |
+| Firmware version (menu) | `V7.0` | Device info screen | confirmed |
 | Version shown at boot | | | unknown |
+| Firmware build date | `2024-12-24 12:00:00` ("Update Time") | Device info screen | confirmed |
 | Official updates available? | | | unknown |
 | EXIF "Software" string | | | unknown |
 
@@ -88,6 +89,7 @@ One row per finding. **Source** = file in this folder, URL, or "observed".
 |------|------------|----------|
 | 2026-10-25 | SoC vendor is **Allwinner** | (1) USB VID `0x1f3a` is Allwinner's; (2) `UDISK` is the user-data volume name used in Allwinner's SDKs; (3) serial `20080411` is a known Allwinner BSP gadget default |
 | 2026-10-25 | Camera runs a **Linux** kernel, version **4.9** | `File-Stor Gadget` is the Linux kernel USB mass-storage gadget's product name; Linux sets the gadget's bcdDevice to the kernel version → `0x0409` = 4.9; Manufacturer `Android` is the Allwinner Linux gadget driver's default string |
+| 2026-10-25 | Model `CDR10` gives no public matches yet; "CDR" is a common abbreviation for *car digital recorder*, consistent with Allwinner's car-DVR/IP-camera V-series software lineage | Device info screen + web search (no CDR10 hits) — **hint only** |
 | 2026-10-25 | Not the camera: Sunplus `0x1bcf:0x08a0` and SEMICO keyboard | Low-speed (1.5 Mb/s) devices behind the same hub — mouse/keyboard, not the camera |
 
 ## Risk acceptance (future modification only)
