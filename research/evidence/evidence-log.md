@@ -72,7 +72,7 @@ One row per finding. **Source** = file in this folder, URL, or "observed".
 | Camera MAC OUI (first 3 bytes only) | `94:7E:4C` (globally-administered bit pattern) | `arp -a` | confirmed |
 | OUI vendor (Wi-Fi chip) | **Not in IEEE registry** as bundled with netaddr 1.3.0; no web hits. Either registered recently or an unregistered/made-up MAC (common on budget modules). Inconclusive | netaddr lookup + web search | unknown |
 | Companion app (name / developer) | **iDC CAM** by **Shenzhen Sunchip Technology Co., Ltd.** (App Store, Utilities, 1.5★ / 149 ratings). QR `qr24.cn/FypBbk` → cli.im download page with Google Play, App Store and two China Android links | Owner phone screenshots, 2026-10-25 | confirmed |
-| Web page at camera IP? | | | |
+| Web page at camera IP? | **No** — Safari: "can't connect to the server" on `http://192.168.10.1` (nothing listening on port 80). The iDC CAM app must use another port/protocol | Safari on Mac, 2026-10-25 | confirmed |
 
 ## Hardware
 
