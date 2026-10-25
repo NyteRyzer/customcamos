@@ -67,10 +67,10 @@ One row per finding. **Source** = file in this folder, URL, or "observed".
 |------|-------|--------|------------|
 | SSID pattern | `4K_WIFI` (fixed name, no unique suffix) | Wi-Fi Information screen, 2026-10-25 | confirmed |
 | Wi-Fi password | Factory default, shown on screen (generic 8-digit; not recorded here) | same | confirmed |
-| Camera IP | | | |
+| Camera IP | `192.168.10.1` (DHCP server; answers ping, TTL 64 — typical Linux default) | `ipconfig getpacket en0` + ping, 2026-10-25 | confirmed |
 | Mac IP / subnet | `192.168.10.100` (DHCP lease from camera) → camera subnet 192.168.10.x | `ipconfig getifaddr en0`, 2026-10-25 | confirmed |
-| Camera MAC OUI (first 3 bytes only) | | | |
-| OUI vendor (Wi-Fi chip) | | | |
+| Camera MAC OUI (first 3 bytes only) | `94:7E:4C` (globally-administered bit pattern) | `arp -a` | confirmed |
+| OUI vendor (Wi-Fi chip) | **Not in IEEE registry** as bundled with netaddr 1.3.0; no web hits. Either registered recently or an unregistered/made-up MAC (common on budget modules). Inconclusive | netaddr lookup + web search | unknown |
 | Companion app (name / developer) | Unknown — on-screen QR ("bc" logo) decodes to `https://qr24.cn/FypBbk` (Chinese QR/short-link host; not reachable from research environment). Owner to scan with phone and note app name | Wi-Fi Information screen | pending |
 | Web page at camera IP? | | | |
 
